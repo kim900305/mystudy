@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/s_style.css">
+    <style>
+        div {
+            border: 0px solid black;
+        }
+
+        /* 토마토 스타일 */
+        .tomato {
+            width: 1900px;
+            height: 150px;
+            position: relative;
+        }
+
+        .tomato>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .tomato>h1 {
+            position: absolute;
+            top: 25px;
+            left: 50%;
+            color: white;
+        }
+
+        .tomato>h4 {
+            position: absolute;
+            top: 70px;
+            left: 50%;
+            color: white;
+        }
+
+        /* 토마토 스타일 */
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            padding: 80px;
+        }
+
+        .search {
+            margin: 90px;
+        }
+
+        .categories>h3 {
+            color: #AAAAAA;
+            cursor: pointer;
+        }
+
+        .pictures>img {
+            border: 0px solid black;
+            width: 400px;
+        }
+
+        .pictures>h2 {
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .pictures>h4 {
+            font-size: 16px;
+        }
+
+        .pictures>span {
+            border: 10px black;
+            cursor: pointer;
+        }
+
+        /* first */
+
+        /* second */
+
+        .bic-pictures {
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+        .small-pictures-a {
+            display: flex;
+            cursor: pointer;
+        }
+
+        .small-pictures>img {
+            border: 0px solid black;
+            width: 150px;
+        }
+
+        .small-pictures-text {
+            font-size: 15px;
+        }
+
+        .small-pictures-text>span {
+            color: #AAAAAA;
+            font-size: 12px;
+        }
+
+        /* second */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="s_top_banner">
+            <div class="s_top_banner_mail_ico">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                </svg>
+            </div>
+            <div class="s_top_banner_mail">
+                <span>hello@colorlib.com</span>
+            </div>
+            <div class="s_top_banner_text">
+                <span>Free Shipping for all Order of $99</span>
+            </div>
+            <div class="s_top_banner_blank">
+                
+            </div>
+            <div class="s_top_banner_sns">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="s_top_banner_sns">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="s_top_banner_sns">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="s_top_banner_sns">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="s_top_banner_greywall">
+
+            </div>
+
+        </div>
+
+        <div class="s_navigation"> <!--navigation 열기-->
+            <div class="s_logo">
+                <a href="./index.html"><img src="https://themewagon.github.io/ogani/img/logo.png" alt=""></a>
+            </div>
+            <ul class="s_page">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./shop.html">SHOP</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+            </ul>
+            <div>
+                <div class="s_heart">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                            <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="s_basket">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z"/>
+                        </svg>
+                    </button>
+                    <span>
+                        item:
+                    </span>
+                    <span class="s_150">
+                        $150.00
+                    </span>
+                </div>
+            </div>
+        </div> <!--navigation 닫기--> 
+
+        <ul class="s_main_menu">
+            <li class="s_main_menu_hover">
+                <a class="s_all_departments_text" href="#">All Departments</a>
+                <ul class="s_all_departments">
+                    <li><a href="./index.html">Fresh meat</a></li> 
+                    <li><a href="./index.html">Vegetables</a></li> 
+                    <li><a href="./index.html">Fruit & Nut Gifts</a></li> 
+                    <li><a href="./index.html">Frush Berries</a></li> 
+                    <li><a href="./index.html">Ocean Foods</a></li> 
+                    <li><a href="./index.html">Butter & Eggs</a></li> 
+                    <li><a href="./index.html">Fastfood</a></li> 
+                    <li><a href="./index.html">Fresh Onion</a></li> 
+                    <li><a href="./index.html">Papayaya & Crips</a></li> 
+                    <li><a href="./index.html">Oatmeal</a></li> 
+                    <li><a href="./index.html">Fresh Bananas</a></li>
+                </ul>
+            </li>
+            <div>
+                <div class="s_search_box">
+                    <span class="s_search_all_text">
+                        ALL Categories
+                    </span>
+                    <input type="text" placeholder="What do u need?">
+                    <button class="s_search">
+                        SEARCH
+                    </button>
+                </div>
+            </div>
+        </ul>
+        <!-- 토마토 바디 -->
+
+        <div class="tomato">
+
+            <img src="https://lh6.googleusercontent.com/proxy/hdmTTif6kyNBsGyhTzpinjTTbiNRjyAhINKN-wkeX8vLCHndw9ISHYlficyp5QiVz9d8-Qut7UlBsfQOqFJrTBvt7a_Rgafogi0wy5A1BkoUgQ"
+                alt="">
+            <h1>Blog</h1>
+            <h4>Home - Blog</h4>
+
+            <!-- 토마토 바디 -->
+
+            <div class="first">
+
+                <div class="search">
+                    <!-- 텍스트 바디 -->
+                    <input type="text">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search-heart" viewBox="0 0 16 16">
+                            <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018" />
+                            <path
+                                d="M13 6.5a6.47 6.47 0 0 1-1.258 3.844q.06.044.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11" />
+                        </svg></button>
+                    <!-- 텍스트 바디 -->
+
+                    <!-- 카테고리 바디 -->
+
+                    <div class="categories">
+
+                        <h1>Categories</h1>
+                        <h3>All</h3>
+                        <h3>Beauty (20)</h3>
+                        <h3>food (5)</h3>
+                        <h3>Life Style (9)</h3>
+                        <h3>Travel (10)</h3>
+
+                        <!-- 카테고리 바디 -->
+
+                    </div>
+                </div>
+                <div class="pictures">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="">
+                    <h2>May 6ways to prepare breakfast for 30</h2>
+                    <h4>Sed quia non numquam modi tempora indunt ut<br> labore et dolore magnam aliquam quaerat</h4>
+                    <br>
+                    <SPan>READ MORE</SPan>
+                </div>
+
+                <div class="pictures">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcg2Ax_SmIK80PqSEhlEkCyC-23qPZROio2A&s"
+                        alt="">
+                    <h2>May 6ways to prepare breakfast for 30</h2>
+                    <h4>Sed quia non numquam modi tempora indunt ut<br> labore et dolore magnam aliquam quaerat</h4>
+                    <br>
+                    <SPan>READ MORE</SPan>
+                </div>
+
+            </div>
+
+            <div class="second">
+                <div class="news">
+                    <h2>Recent News</h2>
+                </div>
+                <div class="bic-pictures">
+                    <div>
+                        <div class="small-pictures-a">
+                            <div class="small-pictures">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbLxxhUjtbWgqscTWjUGrqF9atwOpG-sON9w&s"
+                                    alt="">
+                            </div>
+                            <div class="small-pictures-text">
+                                <h4>09 Kinds Of Vegetables <br> Protect The Liver</h4>
+                                <br>
+                                <span>MAR 05, 2019</span>
+                            </div>
+                        </div>
+
+                        <div class="small-pictures-a">
+                            <div class="small-pictures">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj-i8qzErqx4M2CWkBU219BSnGx5yfeFQesA&s"
+                                    alt="">
+                            </div>
+                            <div class="small-pictures-text">
+                                <h4>09 Kinds Of Vegetables <br> Protect The Liver</h4>
+                                <br>
+                                <span>MAR 05, 2019</span>
+                            </div>
+                        </div>
+
+                        <div class="small-pictures-a">
+                            <div class="small-pictures">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6HvrF0Q5j2Vgxt8pwjyeOPorPTyiR9GuTog&s"
+                                    alt="">
+                            </div>
+                            <div class="small-pictures-text">
+                                <h4>09 Kinds Of Vegetables <br> Protect The Liver</h4>
+                                <br>
+                                <span>MAR 05, 2019</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="pictures">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgY2waUCCLpFW_iHw58fLT8jYaouPgPQH0XQ&s"
+                            alt="">
+                        <h2>May 6ways to prepare breakfast for 30</h2>
+                        <h4>Sed quia non numquam modi tempora indunt ut<br> labore et dolore magnam aliquam quaerat</h4>
+                        <br>
+                        <SPan>READ MORE</SPan>
+                    </div>
+
+                    <div class="pictures">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSayPCgoqTza-NgF0oS8-iF-ChoaXEryw5X5Q&s"
+                            alt="">
+                        <h2>May 6ways to prepare breakfast for 30</h2>
+                        <h4>Sed quia non numquam modi tempora indunt ut<br> labore et dolore magnam aliquam quaerat</h4>
+                        <br>
+                        <SPan>READ MORE</SPan>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>
